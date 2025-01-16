@@ -1,3 +1,3 @@
 # My Dotfiles
 
-These are my dotfiles managed using YAMD.
+These are my dotfiles managed using YADM.
