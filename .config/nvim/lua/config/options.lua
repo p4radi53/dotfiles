@@ -14,4 +14,3 @@ opt.termguicolors = true
 
 opt.scrolloff = 8
 
-vim.cmd.colorscheme("catppuccin")

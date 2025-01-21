@@ -10,9 +10,23 @@ return {
 			local cmp = require("cmp")
 			cmp.setup({
 				mapping = {
-					["<C-k>"] = cmp.mapping.select_prev_item(),
-					["<C-j>"] = cmp.mapping.select_next_item(),
+          ["<C-f>"] = cmp.mapping.complete(),
+					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = false }),
+					["<Tab>"] = cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.select_next_item()
+						else
+							fallback()
+						end
+					end, { "i", "s" }),
+					["<S-Tab>"] = cmp.mapping(function(fallback)
+						if cmp.visible() then
+							cmp.select_prev_item()
+						else
+							fallback()
+						end
+					end, { "i", "s" }),
 				},
 				sources = {
 					{ name = "nvim_lsp" },

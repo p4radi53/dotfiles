@@ -1,16 +1,25 @@
 return {
-	{
-		-- Language Server Installer
-		"williamboman/mason.nvim",
-		build = ":MasonUpdate",
-		opts = {},
-	},
+  {
+    -- Language Server Installer
+    "williamboman/mason.nvim",
+    build = ":MasonUpdate",
+    opts = {},
+  },
 
-	{
-		-- Mason-LSPConfig Bridge
-		"williamboman/mason-lspconfig.nvim",
-		opts = {
-			ensure_installed = { "lua_ls", "pyright", "ts_ls", "rust_analyzer", "ruff", "jdtls" },
-		},
-	},
+  {
+    -- Mason-LSPConfig Bridge
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = {
+        "tflint",
+        "lua_ls",
+        "terraformls",
+        "pyright",
+        "ts_ls",
+        "rust_analyzer",
+        "ruff",
+        "jdtls",
+      },
+    },
+  },
 }
