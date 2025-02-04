@@ -22,6 +22,9 @@ return {
 					"yaml",
 					"toml",
 					"json",
+          "markdown",
+          "go",
+          "just"
 				},
 				sync_install = false,
 				highlight = { enable = true },

@@ -19,6 +19,7 @@ return {
         "rust_analyzer",
         "ruff",
         "jdtls",
+        "gopls"
       },
     },
   },

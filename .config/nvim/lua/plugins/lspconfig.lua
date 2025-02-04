@@ -83,6 +83,7 @@ return {
       lspconfig.ruff.setup({})
       lspconfig.rust_analyzer.setup({})
       lspconfig.terraformls.setup({})
+      lspconfig.gopls.setup({})
     end,
   },
 }
