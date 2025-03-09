@@ -33,7 +33,6 @@ return {
           vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
           vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
           vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
-          vim.keymap.set("n", "<leader>D>", "<cmd>Telescope diagnostics<CR>")
         end,
       })
 
@@ -74,7 +73,7 @@ return {
                     reportUnusedFunction = "none",
                     reportUnusedVariable = "none",
                 },
-              typeCheckingMode = "strict",
+              typeCheckingMode = "basic",
               disableOrganizeImports = true, -- This key might not be recognized by Pyright
             },
           },
