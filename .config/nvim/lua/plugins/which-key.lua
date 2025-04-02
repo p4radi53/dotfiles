@@ -12,8 +12,6 @@ return {
 				{ "<leader>f", group = "Fuzzy Finder" },
 				{ "<leader>h", group = "Harpoon" },
 				{ "<leader>c", group = "Code actions" },
-				{ "<leader>t", group = "Trouble" },
-				{ "<leader>j", group = "Justfile" },
 			})
 		end,
 	},
