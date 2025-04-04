@@ -3,9 +3,7 @@ require("config.keymap")
 require("config.options")
 
 vim.cmd.colorscheme("tokyonight-night")
-vim.diagnostic.config({
-  virtual_text = true,
-})
+
 vim.lsp.enable({
   "luals",
   "pyright",
@@ -13,6 +11,7 @@ vim.lsp.enable({
   "gopls",
   "terraformls",
 })
+
 vim.api.nvim_create_autocmd("LspAttach", {
   desc = "LSP actions",
   callback = function(event)
@@ -30,3 +29,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
   end,
 })
+
+
+-- Make clipboard work on WSL (requires xclip installed)
+vim.opt.clipboard = "unnamedplus"
+

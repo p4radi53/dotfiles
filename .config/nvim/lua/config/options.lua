@@ -14,3 +14,6 @@ opt.termguicolors = true
 
 opt.scrolloff = 8
 
+vim.diagnostic.config({
+  virtual_text = true,
+})
