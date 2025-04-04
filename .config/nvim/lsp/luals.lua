@@ -13,7 +13,7 @@ return {
       },
       signatureHelp = { enabled = true },
       diagnostics = {
-        globals = { "vim", "require" },
+        globals = { "vim", "require", "Snacks" },
       },
       workspace = {
         library = vim.api.nvim_get_runtime_file("", true)
