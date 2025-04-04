@@ -10,7 +10,6 @@ return {
 			local wk = require("which-key")
 			wk.add({
 				{ "<leader>f", group = "Fuzzy Finder" },
-				{ "<leader>h", group = "Harpoon" },
 				{ "<leader>c", group = "Code actions" },
 			})
 		end,

@@ -8,7 +8,6 @@ vim.cmd.colorscheme("tokyonight-night")
 vim.diagnostic.config({
   virtual_text = true,
 })
-
 vim.lsp.enable({
   "luals",
   "pyright",
