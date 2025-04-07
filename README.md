@@ -7,6 +7,8 @@ Contains configurations for:
 - nvim: Highly customized text editor configuration with plugins and key mappings.
 - ghostty: Terminal emulator settings for themes, fonts, and behavior.
 - bash: Shell configuration.
+- aerospace: i3-like window/tiling manager
+- brewfile: homebrew installation list 
 
-Requirements
-...
+Requirements:
+Look through the Brewfile.
