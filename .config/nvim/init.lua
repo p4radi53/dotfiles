@@ -30,7 +30,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
-
 -- Make clipboard work on WSL (requires xclip installed)
 vim.opt.clipboard = "unnamedplus"
 
