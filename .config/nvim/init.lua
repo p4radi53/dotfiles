@@ -10,6 +10,7 @@ vim.lsp.enable({
   "ruff",
   "gopls",
   "terraformls",
+  "rust-analyzer",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -32,4 +33,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 -- Make clipboard work on WSL (requires xclip installed)
 vim.opt.clipboard = "unnamedplus"
-
