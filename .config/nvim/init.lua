@@ -11,6 +11,7 @@ vim.lsp.enable({
   "gopls",
   "terraformls",
   "rust-analyzer",
+  "clangd",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
