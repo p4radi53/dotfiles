@@ -1,3 +1,5 @@
+-- Some LSP linter/formatting configurations I couldn't add
+
 return {
   "nvimtools/none-ls.nvim",
   dependencies = {
@@ -11,7 +13,6 @@ return {
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.terraform_fmt,
       null_ls.builtins.diagnostics.terraform_validate,
-      null_ls.builtins.formatting.gofmt,
     }
 
     null_ls.setup({

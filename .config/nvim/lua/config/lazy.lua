@@ -1,3 +1,5 @@
+-- This code was copied from lazy.lua repository
+
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -27,7 +29,7 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins" },
     { import = "plugins.themes" },
+    { import = "plugins.languages" },
   },
   checker = { enabled = true },
 })
-
