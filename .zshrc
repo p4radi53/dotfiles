@@ -14,10 +14,8 @@ export NVM_DIR="$HOME/.nvm"
 # pipx (for Python executables)
 export PATH="$PATH:$HOME/.local/bin"  # Add pipx binaries to PATH
 
-# Load environment variables from ~/.env (if exists)
-if [[ -f "$HOME/.env" ]]; then
-  export $(grep -v '^#' ~/.env | xargs)
-fi
+# golang - add binaries
+export PATH="$PATH:$HOME/go/bin"
 
 # Enable Bash completion (if needed for certain commands)
 autoload -U +X bashcompinit && bashcompinit
