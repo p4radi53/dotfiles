@@ -17,6 +17,11 @@ export PATH="$PATH:$HOME/.local/bin"  # Add pipx binaries to PATH
 # golang - add binaries
 export PATH="$PATH:$HOME/go/bin"
 
+# env variables
+set -a
+source ~/.env
+set +a
+
 # Enable Bash completion (if needed for certain commands)
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
@@ -26,3 +31,7 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
 
+# Functions
+set_java_17() {
+  export JAVA_HOME="$(brew --prefix openjdk@17)/libexec/openjdk.jdk/Contents/Home"
+}
