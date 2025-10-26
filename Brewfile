@@ -1,39 +1,109 @@
-# Dev Environment
-brew "bash"                   # Modern Unix shell
-brew "coreutils"              # GNU core utilities for macOS
-brew "neovim"                 # Hyperextensible Vim-based text editor
-brew "tmux"                   # Terminal multiplexer
-brew "ripgrep"                # Fast recursive search tool (like grep)
-brew "fd"                     # User-friendly alternative to find
-brew "fzf"                    # Fuzzy finder for the terminal
-brew "bat"                    # cat clone with syntax highlighting
-brew "stylua"                 # Opinionated Lua code formatter
-brew "tokei"                  # Count lines of code per language
-brew "just"                   # Command runner for project tasks
-
-# Languages
-brew "python@3.12"            # Python 3.12 programming language
-brew "python@3.13"            # Python 3.13 (pre-release or dev)
-brew "pipx"                   # Run Python apps in isolated environments
-brew "python-setuptools"     # Tools for building and distributing Python packages
-brew "deno"                   # Secure runtime for JavaScript and TypeScript
-brew "nvm"                    # Node.js version manager
-brew "openjdk"               # Java Development Kit
-brew "zig"                    # Low-level programming language
-
-# Containers & DevOps
-brew "colima"                 # Container runtime for Docker/Linux on macOS
-brew "docker"                 # Container platform for building and running apps
-brew "docker-compose"         # Define and run multi-container apps
-brew "lazydocker"             # Terminal UI for managing Docker
-brew "kubernetes-cli"         # kubectl — Kubernetes command-line tool
-brew "minikube"               # Run a local Kubernetes cluster
-brew "helm"                   # Kubernetes package manager
-brew "terraform"              # Infrastructure as Code tool
-brew "azure-cli"              # Microsoft Azure command-line interface
-
-# Tools
-brew "httpie"                 # User-friendly alternative to cURL
-brew "htop"                   # Interactive process viewer
-brew "jq"                     # Command-line JSON processor
-brew "yadm"                   # Dotfiles manager using Git
+tap "caskroom/cask"
+tap "coursier/formulas"
+tap "homebrew/services"
+tap "nikitabobko/tap"
+tap "nrwl/nx"
+brew "python@3.13"
+brew "azure-cli"
+brew "bash"
+brew "bat"
+brew "colima"
+brew "coreutils"
+brew "delve"
+brew "deno"
+brew "docker"
+brew "docker-compose"
+brew "fd"
+brew "fzf"
+brew "gawk"
+brew "glab"
+brew "gnu-sed"
+brew "gnupg"
+brew "go"
+brew "openjdk"
+brew "gradle"
+brew "helm"
+brew "htop"
+brew "httpie"
+brew "jq"
+brew "just"
+brew "kubernetes-cli"
+brew "lazydocker"
+brew "lazygit"
+brew "llvm"
+brew "maven"
+brew "minikube"
+brew "neovim"
+brew "nvm"
+brew "openjdk@17"
+brew "pipx"
+brew "portaudio"
+brew "python-setuptools"
+brew "python@3.10"
+brew "python@3.12"
+brew "redis"
+brew "ripgrep"
+brew "stylua"
+brew "terraform"
+brew "tmux"
+brew "tokei"
+brew "yadm"
+brew "zig"
+brew "coursier/formulas/coursier"
+brew "nrwl/nx/nx"
+cask "aerospace"
+cask "calibre"
+cask "firefox"
+cask "ghostty"
+cask "intellij-idea-ce"
+cask "minecraft"
+cask "obs"
+cask "obsidian"
+cask "raspberry-pi-imager"
+cask "spotify"
+cask "temurin@8"
+cask "tunnelblick"
+cask "unity-hub"
+cask "visual-studio-code"
+cask "whatsapp"
+cask "zoom"
+vscode "aaron-bond.better-comments"
+vscode "charliermarsh.ruff"
+vscode "christian-kohler.path-intellisense"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "marnix.tokyo-night-pro"
+vscode "monokai.theme-monokai-pro-vscode"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "redhat.java"
+vscode "redhat.vscode-yaml"
+vscode "ritwickdey.liveserver"
+vscode "scala-lang.scala"
+vscode "scalameta.metals"
+vscode "tamasfe.even-better-toml"
+vscode "usernamehw.errorlens"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
+vscode "vscjava.migrate-java-to-azure"
+vscode "vscjava.vscode-gradle"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-java-upgrade"
+vscode "vscjava.vscode-maven"
+vscode "vscjava.vscode-spring-initializr"
+vscode "vscodevim.vim"
+vscode "waderyan.gitblame"
+vscode "yzhang.markdown-all-in-one"
+go "github.com/spf13/cobra-cli"
+go "golang.org/x/tools/gopls"
