@@ -1,1 +1,2 @@
-theme = tokyonight_night
+theme = TokyoNight Night
+keybind = shift+enter=text:\x1b\r
