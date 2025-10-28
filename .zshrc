@@ -35,3 +35,7 @@ alias gc="git commit"
 set_java_17() {
   export JAVA_HOME="$(brew --prefix openjdk@17)/libexec/openjdk.jdk/Contents/Home"
 }
+
+# Dotfiles
+alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+dotfiles config --local status.showUntrackedFiles no
