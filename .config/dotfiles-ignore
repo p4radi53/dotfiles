@@ -1,0 +1,31 @@
+# SSH
+.ssh/*
+!.ssh/config
+
+# GPG
+.gnupg/*
+!.gnupg/gpg.conf
+!.gnupg/gpg-agent.conf
+
+# Credentials / Tokens
+*.key
+*.pem
+*.p12
+*.crt
+*.gpg
+*.asc
+*.kdbx
+
+# Cloud/service configs
+.aws/
+.azure/
+.gcloud/
+.kube/
+
+# Password manager data
+.Bitwarden*
+1Password/
+
+# Env
+.env
+

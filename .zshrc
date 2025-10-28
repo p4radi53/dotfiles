@@ -37,5 +37,11 @@ set_java_17() {
 }
 
 # Dotfiles
-alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+dotfiles() {
+  /usr/bin/git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" "$@"
+}
+# compdef dotfiles=git
+# alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
+compdef dotfiles=git
 dotfiles config --local status.showUntrackedFiles no
+dotfiles config --local core.excludesFile "$HOME/.config/dotfiles-ignore"
