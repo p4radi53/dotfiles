@@ -13,11 +13,6 @@ keymap.set("i", "jj", "<ESC>", { desc = "exit insert mode" })
 keymap.set({ "n", "i" }, "<PageDown>", "<Nop>", { silent = true })
 keymap.set({ "n", "i" }, "<PageUp>", "<Nop>", { silent = true })
 
--- Quickfix navigation
-keymap.set("n", "]q", "<cmd>cnext<CR>zz", { desc = "Next quickfix" })
-keymap.set("n", "[q", "<cmd>cprev<CR>zz", { desc = "Prev quickfix" })
-keymap.set("n", "<leader>qo", "<cmd>copen<CR>", { desc = "Open quickfix" })
-
 -- LSP keymaps
 vim.api.nvim_create_autocmd("LspAttach", {
 	desc = "LSP actions",
