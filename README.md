@@ -28,7 +28,4 @@ Contains configurations for:
 - ghostty: Terminal emulator settings for themes, fonts, and behavior.
 - bash: Shell configuration.
 - aerospace: i3-like window/tiling manager
-- brewfile: homebrew installation list 
-
-Requirements:
-Look through the Brewfile.
+- brewfile: homebrew installation list
